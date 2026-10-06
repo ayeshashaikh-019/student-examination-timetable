@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Examination Timetable</title>
+</head>
+<body>
+    <h1>HITMS Student Examination Timetable</h1>
+ 
+    <table border="1">
+        <caption>Fall 2026 Examination Schedule</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Date</th>
+                <th rowspan="2">Time</th>
+                <th rowspan="2">Subject</th>
+                <th rowspan="2">Room</th>
+                <th colspan="2">Instructor Details</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Course Group</th>
+            </tr>
+        </thead>
+ 
+        <tbody>
+            <tr>
+                <td rowspan="2">30 September 2026</td>
+                <td>09:00 AM - 11:00 AM</td>
+                <td>Web Technologies</td>
+                <td>Lab 1</td>
+                <td>Engr. Shohaira Mughal</td>
+                <td>BS Software Engineering</td>
+            </tr>
+            <tr>
+                <td>01:00 PM - 03:00 PM</td>
+                <td>Database Systems</td>
+                <td>Room 204</td>
+                <td>Engr. Ali Raza</td>
+                <td>BS Software Engineering</td>
+            </tr>
+ 
+            <tr>
+                <td rowspan="2">02 October 2026</td>
+                <td>09:00 AM - 11:00 AM</td>
+                <td>Software Construction</td>
+                <td>Room 301</td>
+                <td>Engr. Sara Ahmed</td>
+                <td>BS Software Engineering</td>
+            </tr>
+            <tr>
+                <td>01:00 PM - 03:00 PM</td>
+                <td>Computer Networks</td>
+                <td>Lab 2</td>
+                <td>Engr. Hassan Khan</td>
+                <td>BS Computer Science</td>
+            </tr>
+        </tbody>
+ 
+        <tfoot>
+            <tr>
+                <td colspan="6">Please arrive at least 20 minutes before the examination starts.</td>
+            </tr>
+        </tfoot>
+    </table>
+ 
+    <h2>Explanation of rowspan and colspan</h2>
+    <ul>
+        <li>
+            <strong>rowspan="2" in Date:</strong> The same date applies to two examination rows,
+            so one date cell is used for both rows instead of repeating it.
+        </li>
+        <li>
+            <strong>colspan="2" in Instructor Details:</strong> The heading covers two related columns:
+            Instructor Name and Course Group.
+        </li>
+        <li>
+            <strong>colspan="6" in the footer:</strong> The reminder belongs to the complete table,
+            so it stretches across all six columns.
+        </li>
+    </ul>
+</body>
+</html>
